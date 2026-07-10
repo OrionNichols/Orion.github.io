@@ -71,11 +71,55 @@
 											</div>
 										</div>
 										<h4>Cutting Force Modeling</h4>
-										<p><span class="image left"><img src="images/Capstone Stuff/results.png" alt="" /></span>One of the largest design challenges was determining the force required to prune live Coast Redwood branches.</p>
 
-										<p>I first developed a theoretical cutting model based on the shear strength of green redwood branches. This model established the expected cutting loads and allowed the team to size actuators before hardware was purchased. Experimental testing later showed that the simple shear model underestimated the true cutting force because it did not account for blade geometry or the anisotropic structure of wood.</p>
+										<!-- Top section -->
+										<div class="row">
+											<div class="col-5 col-12-medium">
+												<span class="image fit">
+													<img src="images/Capstone Stuff/results.png" alt="Experimental and theoretical cutting force comparison">
+												</span>
+											</div>
 
-										<p>Using the validated results, the team selected actuators capable of producing approximately 7 kN of force, allowing the robot to reliably cut branches up to 38 mm in diameter.</p>
+											<div class="col-7 col-12-medium">
+												<p>
+													One of the first stages of development was determining the force
+													required to cut live Coast Redwood branches. I first developed a
+													theoretical cutting model based on the shear strength of green
+													redwood. While this provided an initial estimate for actuator sizing,
+													it did not account for blade geometry.
+												</p>
+
+												<p>
+													To improve the prediction, I developed a cutting model using
+													Merchant Circle Theory that incorporated blade rake angle, friction,
+													and shear angle. This allowed the team to evaluate how blade geometry
+													and material properties influenced cutting forces.
+												</p>
+											</div>
+										</div>
+
+										<!-- Center image -->
+										<span class="image fit">
+											<img src="images/Capstone Stuff/Model creation.png"
+												alt="Merchant circle theory and blade geometry">
+										</span>
+
+										<p>
+											To validate the analytical model, I designed and conducted a guillotine-style
+											cutting experiment capable of producing consistent cuts on live branches.
+											Testing showed that measured cutting forces were substantially higher than the
+											original shear model predicted due to wood anisotropy, blade friction, and
+											experimental pinching effects. These conservative results were used to size
+											the robot's cutting actuator, leading to the selection of a system capable of
+											producing approximately <strong>7 kN</strong> of force for branches up to
+											<strong>38 mm</strong> in diameter.
+										</p>
+
+										<!-- Bottom figure -->
+										<span class="image fit">
+											<img src="images/Capstone Stuff/model comparison.png"
+												alt="Final cutting force results">
+										</span>
 										
 										<h5>Experimental Testing</h5>
 										<p><span class="image right"><img src="images/Capstone Stuff/Experimental results.png" alt="" /></span>To validate the analytical model, I designed and conducted cutting experiments using a Shimadzu Universal Testing Machine.</p>
@@ -86,7 +130,7 @@
 										<h6>Structural Design</h6>
 										<p><span class="image left"><img src="images/Capstone Stuff/some of the stress analysis.png" alt="" /></span>Once cutting loads were experimentally verified, I used those results to evaluate the structural integrity of the robot's clamping mechanism.</p>
 
-										<p>I modeled the primary structural members—including the actuator support bar, main crossbar, clamping foot, welds, and bolted joints—to ensure all components remained below the yield strength of their materials under worst-case cutting loads.</p>
+										<p>I modeled the primary structural members-including the actuator support bar, main crossbar, clamping foot, welds, and bolted joints—to ensure all components remained below the yield strength of their materials under worst-case cutting loads.</p>
 
 										<p>The highest calculated bending stress occurred in the main crossbar at approximately 130 MPa, well below the 276 MPa yield strength of 6061-T6 aluminum. Bolt and weld stresses were also verified to remain within allowable limits, providing confidence that the robot could safely withstand repeated pruning operations.</p>
 									</section>
