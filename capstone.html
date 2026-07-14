@@ -44,10 +44,7 @@
 						<header>
 							<div class="inner">
 								<h2>Robotic Inchworm Pruner (RIP-bot) Capstone Project</h2>
-								<p>Developing a safe and efficient robotic system for pruning coastal redwood trees.</p>
-								<div class="banner-image">
-									<img src="images/Capstone Stuff/the team.JPG" alt="Capstone Team">
-								</div>
+								<p>Developing a safe and efficient robotic system.</p>
 							
 							</div>
 							
@@ -74,7 +71,7 @@
 										</div>
 										<h4>Cutting Force Modeling</h4>
 
-										<!-- Top section -->
+										<!-- Content 1 -->
 										<div class="row">
 											<div class="col-5 col-12-medium">
 												<span class="image fit">
@@ -84,18 +81,19 @@
 
 											<div class="col-7 col-12-medium">
 												<p>
-													One of the first stages of development was determining the force
-													required to cut live Coast Redwood branches. I first developed a
-													theoretical cutting model based on the shear strength of green
-													redwood. While this provided an initial estimate for actuator sizing,
-													it did not account for blade geometry.
+													One of the first stages of the project was determining the force
+													required to cut live coastal redwood branches. To address this, I first
+													developed a theoretical cutting model based on the shear strength of
+													green redwood. While this provided an initial estimate for actuator
+													sizing, it did not account for blade geometry.
 												</p>
 
 												<p>
 													To improve the prediction, I developed a cutting model using
 													Merchant Circle Theory that incorporated blade rake angle, friction,
-													and shear angle. This allowed the team to evaluate how blade geometry
-													and material properties influenced cutting forces.
+													and shear angle. This model allowed the team to evaluate how blade
+													geometry and material properties influenced cutting forces and informed
+													subsequent design decisions.
 												</p>
 											</div>
 										</div>
@@ -107,12 +105,14 @@
 										</span>
 
 										<p>
-											To validate the analytical model, I designed and conducted a guillotine-style
-											cutting experiment capable of producing consistent cuts on live branches.
-											Testing showed that measured cutting forces were substantially higher than the
-											original shear model predicted due to wood anisotropy, blade friction, and
-											experimental pinching effects. These conservative results were used to size
-											the robot's cutting actuator, leading to the selection of a system capable of
+										
+											To validate the analytical model, I designed and conducted a
+											guillotine-style cutting experiment capable of producing consistent cuts
+											on live branches. The experimental results showed that measured cutting
+											forces were substantially higher than the original shear model predicted
+											due to wood anisotropy, blade friction, and experimental pinching effects.
+											These conservative results were ultimately used to size the robot's
+											cutting actuator, leading to the selection of a system capable of
 											producing approximately <strong>7 kN</strong> of force for branches up to
 											<strong>38 mm</strong> in diameter.
 										</p>
@@ -135,11 +135,11 @@
 
 											<div class="col-7 col-12-medium">
 												<p>
-													The first experiment that we conducted was to validate and verify the
-													forces required to cut Coast Redwood branches. In addition to measuring
-													cutting force, we wanted to determine whether the straight-blade cutting
-													process would produce cuts with a quality similar to the bypass loppers
-													currently used in the field.
+													To validate the cutting model, I designed and conducted experiments to
+													measure the forces required to cut live coastal redwood branches. In
+													addition to measuring cutting force, I evaluated whether the straight-blade
+													cutting process produced cuts with a quality comparable to the bypass
+													loppers currently used in the field.
 												</p>
 											</div>
 										</div>
@@ -148,12 +148,12 @@
 										<div class="row">
 											<div class="col-7 col-12-medium">
 												<p>
-													Fresh Coast Redwood branches ranging from 10-38 mm in diameter were cut
-													while recording force-displacement data using a Shimadzu universal testing
-													machine. Peak cutting force increased with branch diameter, reaching
-													approximately 7.8 kN for the largest branch tested. These experimental
-													results became the basis for actuator selection and the structural loading
-													used throughout the robot design.
+													I tested fresh coastal redwood branches ranging from 10&ndash;38 mm in
+													diameter while recording force-displacement data using a Shimadzu
+													universal testing machine. Peak cutting force increased with branch
+													diameter, reaching approximately 7.8 kN for the largest branch tested.
+													The resulting data became the basis for actuator selection and the
+													structural loading conditions used throughout the robot design.
 												</p>
 											</div>
 
@@ -175,14 +175,14 @@
 											<div class="col-7 col-12-medium">
 												<p>
 													Beyond force testing, I evaluated cut quality using a Keyence VR-6000
-													3D microscope, comparing the robot's cuts against commercial bypass
-													loppers. We measured the surface roughness (peaks per micrometer) and
-													compared those averages with the lopper cuts. Statistical analysis using
-													Mathematica showed no significant difference in surface roughness
-													(<em>p</em> = 0.95), demonstrating that the straight-blade mechanism
-													produced cut quality that was not statistically different from the
-													loppers. This provided the basis upon which our inchworm cutting
-													mechanism was designed.
+													3D microscope by comparing the robot's cuts against commercial bypass
+													loppers. I measured surface roughness (peaks per micrometer) and
+													compared the average values between the two cutting methods.
+													Statistical analysis performed in Mathematica showed no significant
+													difference in surface roughness (<em>p</em> = 0.95), demonstrating that
+													the straight-blade mechanism produced cut quality comparable to the
+													loppers. These results validated the cutting approach and supported its
+													integration into the final inchworm pruning mechanism.
 												</p>
 											</div>
 										</div>
@@ -246,12 +246,28 @@
 											structurally robust enough for testing. It also identified future opportunities to reduce weight
 											while maintaining a safe factor of strength for the next design iteration.
 											</p>
+
+
+											<h3 class="major">Meet the Team</h3>
+
+											<p>
+												While this page focuses on my individual contributions, the RIP-bot capstone
+												project was made possible by an outstanding team. Pictured below (left to
+												right) are Jacqueline Prieto, James Nisson, Jack Webb, Ian Campbell, and
+												Derek Beatty. They were dedicated teammates, frequent gym partners, and
+												great friends who made the capstone experience both productive and enjoyable.
+											</p>
+											<div class="banner-image">
+												<img src="images/Capstone Stuff/the team.JPG" alt="RIP-bot capstone team">
+											</div>
 									</section>
 
 								</div>
 							</div>
 
 					</section>
+
+					<hr />
 
 				<!-- Footer -->
 					<section id="footer">
@@ -281,7 +297,6 @@
 								<li class="icon solid fa-phone">(530) 601-1688</li>
 								<li class="icon solid fa-envelope"><a href="mailto:Nicholswork0722@gmail.com">Nicholswork0722@gmail.com</a></li>
 								<li class="icon brands fa-twitter"><a href="https://www.linkedin.com/in/orionnichols/">www.linkedin.com/in/orionnichols</a></li>
-								<li class="icon brands fa-instagram"><a href="https://www.instagram.com/orion_makes_minis/">https://www.instagram.com/orion_makes_minis/</a></li>
 							</ul>
 							<ul class="copyright">
 								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
